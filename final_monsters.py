@@ -1,9 +1,11 @@
-#5. nosacijums
+#5. nosacijums 
 file = open("skolen.txt", "r", encoding="utf-8")
 text = file.read()
 list1 = []
 z = 0
 a = text.splitlines()
+for x in a:
+    z += 1
 i = 0
 for x in a:
     b = a[i].split(", ")
@@ -15,7 +17,7 @@ for x in a:
         dictio.update({"atzime": b[2]})
     list1.append(dictio)
 
-#1. nosacijums
+#1. nosacijums Site var pievienot failam ierakstus
 N = int(input("Cik pievienot klat ierakstu: "))
 for x in range(N):
     A = str(input("Ievadi skolena datus: "))
@@ -51,7 +53,13 @@ for x in list1:
     sum += float(a)
     i += 1
 i = 0
-vid = sum/
+vid = sum/z
+print(vid)
 for x in list1:
     a: float= list1[i]['atzime']
-    if
+    if float(a)<z:
+        print("Mazaks par videjo!!!")
+        print(f"Vards: {list1[i]['vards']}")
+        print(f"Uzvards: {list1[i]['uzvards']}")
+        print(f"Atzime: {list1[i]['atzime']}")
+    i += 1
