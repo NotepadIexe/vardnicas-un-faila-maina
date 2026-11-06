@@ -1,7 +1,7 @@
 #5. nosacijums
 file = open("skolen.txt", "r", encoding="utf-8")
 text = file.read()
-list = []
+list1 = []
 z = 0
 a = text.splitlines()
 i = 0
@@ -13,7 +13,7 @@ for x in a:
         dictio.update({"vards": b[0]})
         dictio.update({"uzvards": b[1]})
         dictio.update({"atzime": b[2]})
-    list.append(dictio)
+    list1.append(dictio)
 
 #1. nosacijums
 N = int(input("Cik pievienot klat ierakstu: "))
@@ -26,21 +26,32 @@ text = file.read()
 
 #2.nosacijums
 i = 0
-for x in list:
-    print(f"Vards: {list[i]['vards']}")
-    print(f"Uzvards: {list[i]['uzvards']}")
-    print(f"Atzime: {list[i]['atzime']}")
+for x in list1:
+    print(f"Vards: {list1[i]['vards']}")
+    print(f"Uzvards: {list1[i]['uzvards']}")
+    print(f"Atzime: {list1[i]['atzime']}")
     i += 1
 
 # 3.nosacijums
 i = 0
-for x in list:
-    a: int =list[i]['atzime']
+for x in list1:
+    a: float= list1[i]['atzime']
     if float(a) > 7:
         print("Atzime lielaka par 7!!!!!!")
-        print(f"Vards: {list[i]['vards']}")
-        print(f"Uzvards: {list[i]['uzvards']}")
-        print(f"Atzime: {list[i]['atzime']}")
+        print(f"Vards: {list1[i]['vards']}")
+        print(f"Uzvards: {list1[i]['uzvards']}")
+        print(f"Atzime: {list1[i]['atzime']}")
     i += 1
 
 #4. nosacijums
+sum = 0
+i = 0
+for x in list1:
+    a: float= list1[i]['atzime']
+    sum += float(a)
+    i += 1
+i = 0
+vid = sum/
+for x in list1:
+    a: float= list1[i]['atzime']
+    if
