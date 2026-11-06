@@ -1,3 +1,4 @@
 Janis, Pavlovskis, 1
 Arturs, Strupceekno, 6.7
 Marks, Gavrilovs, 10
+Marks, Gavrilovs, 10
